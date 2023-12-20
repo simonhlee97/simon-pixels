@@ -2,10 +2,10 @@
 layout: layouts/base.njk
 ---
 
-<div class='post-header'>
+<section class='post-header'>
   <h1 class='post-title tc'>{{ title }}</h1>
   
-  <p class='tc'>posted: <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
+  <p class='tc'>posted <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
   <p class='tc'>📷 {{camera}}</p>
 
   <div class='tc'>
@@ -15,9 +15,11 @@ layout: layouts/base.njk
       {%- if not loop.last %} {% endif %}
     {%- endfor %}
   </div>
-</div>
+</section>
 
+<section class='post-content'>
 {{ content | safe }}
+
 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
@@ -29,3 +31,4 @@ layout: layouts/base.njk
 </ul>
 {%- endif %}
 {%- endif %}
+</section>
