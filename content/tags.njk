@@ -14,7 +14,7 @@ eleventyComputed:
   title: Tagged "{{ tag }}"
 permalink: /tags/{{ tag | slugify }}/
 ---
-<h1 class='tc'>Tagged "{{ tag }}"</h1>
+<h1 class='tc page-name'>Tagged "{{ tag }}"</h1>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}

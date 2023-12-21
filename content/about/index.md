@@ -1,9 +1,11 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: About Me
+  key: About
   order: 3
 ---
-# About Me
+<h2 class='tc page-name'>About</h2>
 
-I am a person that writes stuff.
+<div class='p-2'>
+  <p>Hi, I'm Simon. Hobbyist-photographer.</p>
+</div>

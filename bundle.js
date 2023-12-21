@@ -3,17 +3,17 @@ function Gallery(gallery) {
 		throw new Error("No Gallery Found!");
 	}
 	// select the elements we need
-	const images = Array.from(gallery.querySelectorAll("img"));
-	const modal = document.querySelector(".modal");
-	const prevButton = modal.querySelector(".prev");
-	const nextButton = modal.querySelector(".next");
+	const images = Array.from(gallery.querySelectorAll(".modal-img"));
+	const modal = document.querySelector(".modal-w");
+	const prevButton = modal.querySelector(".prev-img");
+	const nextButton = modal.querySelector(".next-img");
 	let currentImage;
 
 	function openModal() {
 		console.info("Opening Modal...");
 		// First check if the modal is already open
 		if (modal.matches(".open")) {
-			console.info("Madal already open");
+			console.info("Modal already open");
 			return; // stop the function from running
 		}
 		modal.classList.add("open");
@@ -84,7 +84,4 @@ function Gallery(gallery) {
 	modal.addEventListener("click", handleClickOutside);
 }
 
-// Use it on the page
-
-const gallery1 = Gallery(document.querySelector(".gallery1"));
-const gallery2 = Gallery(document.querySelector(".gallery2"));
+const gallery3 = Gallery(document.querySelector(".gallery3"));

@@ -8,7 +8,7 @@ layout: layouts/base.njk
   <p class='tc'>posted <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
   <p class='tc'>📷 {{camera}}</p>
 
-  <div class='tc'>
+  <div class='tc post-tags'>
     {%- for tag in tags | filterTagList %}
       {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
       <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
@@ -25,10 +25,28 @@ layout: layouts/base.njk
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
-<ul class="links-nextprev">
-	{%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-	{%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-</ul>
+<div class="links-nextprev">
+	{%- if previousPost %}<div class='arrow-wrapper'><span class="post-arrow">&#8249;</span><a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></div>{% endif %}
+	{%- if nextPost %}<div class='arrow-wrapper'><a href="{{ nextPost.url }}" class='t-a-r'>{{ nextPost.data.title }}</a><span class="post-arrow">&#8250;</span></div>{% endif %}
+</div>
 {%- endif %}
 {%- endif %}
+</section>
+<section>
+  <div class="modal-w">
+    <div class="modalInner">
+      <button aria-label="Previous Photo" class="prev-img">←</button>
+      <figure>
+        <img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=1">
+        <figcaption>
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dignissimos obcaecati nisi placeat eaque
+            voluptate, exercitationem eius? Non, iusto provident itaque, voluptate labore a alias officia, amet sunt
+            pariatur praesentium tenetur voluptatibus dolores mollitia quasi aliquid assumenda possimus maiores
+            exercitationem!</p>
+        </figcaption>
+      </figure>
+      <button class="next-img" aria-label="Next Photo">→</button>
+    </div>
+  </div>
 </section>

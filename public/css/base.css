@@ -178,7 +178,7 @@ html {
   --blue: #0072B9;
   --pink: #D60087;
   --yellow: #ffc600;
-  --black: #2e2e2e;
+  --black: #3e3e3e;
   --red: #e90000;
   --green: #61e846;
   --text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -221,7 +221,7 @@ input[type="button"] {
   border: 2px solid transparent;
   text-decoration: none;
   font-weight: 600;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 :focus {
@@ -244,24 +244,14 @@ select {
   border: 1px solid red;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: black;
-  margin-top: 0;
-  /* line-height: 1; */
-  /* text-shadow: var(--text-shadow); */
+.p-2 {
+  padding: 2em;
 }
-
-.wrapper h1,
-.wrapper h2,
-.wrapper h3,
-.wrapper h4,
-.wrapper h5,
-.wrapper h6 {
+footer.footer {
+  padding-top: 2em;
+}
+.footer p{
+  font-size: 10pt;
   color: var(--black);
-  text-shadow: none;
+  margin-bottom: 1em;
 }

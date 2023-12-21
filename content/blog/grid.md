@@ -9,17 +9,10 @@ tags:
   - urban
   - nature
 ---
-<section class="gallery2">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=1">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=2">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=3">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=4">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=5">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=6">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=7">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=8">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=9">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=10">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=11">
-	<img src="https://source.unsplash.com/user/mkmllr/likes/600x400?v=12">
+<section class="gallery3">
+	<img class="modal-img" alt="asnow" src="https://picsum.photos/id/237/400/300" />
+	<img class="modal-img" alt="bsnow" src="https://picsum.photos/id/227/800/300" />
+	<img class="modal-img" alt="csnow" src="https://picsum.photos/id/217/900/350" />
+	<img class="modal-img" alt="esnow" src="https://picsum.photos/id/197/400/300" />
+	<img class="modal-img" alt="fsnow" src="https://picsum.photos/id/180/700/600" />
 </section>
