@@ -354,6 +354,8 @@ h2 + .header-anchor {
 }
 .post-content {
   padding: 2em;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 .tagslist {
   display: flex;
