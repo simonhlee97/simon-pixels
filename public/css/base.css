@@ -241,34 +241,52 @@ select {
 }
 
 .success {
-  border: 1px solid red;
+  border: 1px solid var(--red);
 }
 
 .p-2 {
   padding: 2em;
 }
+
 footer.footer {
-  padding-top: 2em;
+  height: 290px;
+  background-image: linear-gradient(75deg, #18181c, rgba(30, 28, 28, 0.719));
+  display: grid;
+  place-items: center;
+  padding: 2em 0;
 }
-.footer p{
+.footer span {
   font-size: 10pt;
-  color: var(--black);
-  margin-bottom: 1em;
+  color: #ddd;
 }
 
-
-#about {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 390px;
-  color: white;
-
-  background: linear-gradient(0deg, rgba(20, 9, 105, 0.3), rgba(30, 28, 30, 0.3)), url('https://picsum.photos/id/1043/1440/600');
-
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1517956050595-8932d6d6b740?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"); */
-}
-#about p {
+.about-page {
+  padding: 3em 2em 3.6em 2em;
   max-width: 72ch;
   margin: 0 auto;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/id/255/1440/440");
+  height: 408px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: auto;
+}
+
+.hero-text {
+  color: white;
+  padding: 0.5rem;
+  /* font-size: 1rem; */
+  text-align: center;
+}
+.hero-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/id/39/1440/440");
+}
+.hero-about {
+  height: 300px;
 }

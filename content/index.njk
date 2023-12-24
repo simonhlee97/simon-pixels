@@ -4,18 +4,12 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
-{# {% set postsCount = collections.posts %} #}
-<div id="hero">
-  <h1 style="font-size:32pt;">PHOTOGRAPHY</h1>
-  <h4 style="font-size:20pt;">BY SIMON LEE</h4>
+<div class="hero-image hero-home">
+  <div class='hero-text'>
+    <h1 style="font-size:32pt;">PHOTOGRAPHY</h1>
+    <h4 style="font-size:20pt;">BY SIMON LEE</h4>
+  </div>
 </div>
 
 {% set postslist = collections.posts %}
-{# {% set postslistCounter = postsCount %} #}
 {% include "postslist.njk" %}
-
-{# <ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul> #}
