@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/11ty/eleventy-base-blog.git"
+		"url": "git://github.com/simonhlee97/simon-pixels"
 	},
 	"author": {
 		"name": "Simon",
@@ -30,7 +30,7 @@
 	"bugs": {
 		"url": "https://github.com/11ty/eleventy-base-blog/issues"
 	},
-	"homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+	"homepage": "https://github.com/simonhlee97/simon-pixels#readme",
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",
 		"@11ty/eleventy-img": "^3.1.1",
