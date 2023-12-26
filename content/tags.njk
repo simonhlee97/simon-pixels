@@ -19,4 +19,6 @@ permalink: /tags/{{ tag | slugify }}/
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
 
-<p class='tc'>See <a href="/tags/">all tags</a>.</p>
+<div class="alltags-link">
+  <p class='tc'>See <a href="/tags/">all tags</a>.</p>
+</div>
