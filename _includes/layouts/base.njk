@@ -17,6 +17,9 @@
 		{%- css %}{% include "public/css/gallery.css" %}{% endcss %}
 		{%- css %}{% include "public/css/menu.css" %}{% endcss %}
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js" integrity="sha512-U9dKDqsXAE11UA9kZ0XKFyZ2gQCj+3AwZdBMni7yXSvWqLFEj8C1s7wRmWl9iyij8d5zb4wm56j4z/JVEwS77g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
 		<style>{% getBundle "css" %}</style>
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
@@ -65,7 +68,7 @@
       <span>Built with <a href="https://www.11ty.dev/" target="_blank" style="color:#ddd;">11ty</a></span>
       <span>Powered by <a href="https://www.netlify.com/" target="_blank" style="color:#ddd;">Netlify</a></span>
     </footer>
-    <script src='../../bundle.js'></script>
+
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>
 </html>
