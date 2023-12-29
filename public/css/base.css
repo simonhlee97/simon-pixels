@@ -249,14 +249,15 @@ select {
 }
 
 footer.footer {
-  height: 290px;
+  height: 220px;
   background-image: linear-gradient(75deg, #18181c, rgba(30, 28, 28, 0.719));
-  display: grid;
-  place-items: center;
-  padding: 2em 0;
+  /* display: grid; */
+  /* place-items: center; */
+  padding: 1.7em 0 1em 0;
+  text-align: center;
 }
 .footer span {
-  font-size: 10pt;
+  font-size: 9.5pt;
   color: #ddd;
 }
 
