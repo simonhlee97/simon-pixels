@@ -8,7 +8,9 @@ This repo contains the files for my [photography blog](https://simon-pixels.netl
 
 This project began with a fork of the [11ty-base-blog](https://github.com/11ty/eleventy-base-blog) (v8).
 
-[11ty Demo Blog](https://eleventy-base-blog.netlify.com/)
+[11ty's Demo Blog](https://eleventy-base-blog.netlify.com/)
+
+[Lightbox library for photo gallery slider](https://lokeshdhakar.com/projects/lightbox2/)
 
 I use [Netlify](https://netlify.com/) for hosting.
 
