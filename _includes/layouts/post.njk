@@ -5,7 +5,7 @@ layout: layouts/base.njk
 <section class='post-header'>
   <h1 class='post-title tc'>{{ title }}</h1>
   
-  <p class='tc'>posted <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
+  <p class='tc'><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
   <p class='tc'>📷 {{camera}}</p>
 
   <div class='tc post-tags'>

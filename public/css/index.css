@@ -267,7 +267,7 @@ h2 + .header-anchor {
 }
 
 .postlist-item {
-  margin: 4px;
+  margin: 5px;
   display: flex;
   width: 420px;
   min-height: 300px;
@@ -298,6 +298,11 @@ h2 + .header-anchor {
   object-fit: cover;
   width: 420px;
   height: 300px;
+}
+.postlist-item img:hover {
+  border-radius: 12px;
+  transition: all 0.4s;
+  scale: 1.01;
 }
 .post-title {
   font-size: min(max(28px, calc(1.75rem + ((1vw - 4.8px) * 3.2143))), 64px);
